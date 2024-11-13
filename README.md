@@ -32,7 +32,6 @@ You can click the Preview link to take a look at your changes.
             100% { opacity: 0.5; }
         }
     </style>
-</head>
 <body>
 
 <script>
