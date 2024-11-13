@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Космическое движение</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="stars-container"></div>
+
+<script>
+    function createStar() {
+        const star = document.createElement('div');
+        star.className = 'star';
+        const x = Math.random() * window.innerWidth;
+        const y = Math.random() * window.innerHeight;
+        star.style.transform = `translate(${x}px, ${y}px)`;
+        document.getElementById('stars-container').appendChild(star);
+
+        // Анимация движения звезды
+        let directionX = Math.random() < 0.5 ? 1 : -1;
+        let directionY = Math.random() < 0.5 ? 1 : -1;
+
+        setInterval(() => {
+            const currentX = parseFloat(star.style.transform.split('(')[1]);
+            const currentY = parseFloat(star.style.transform.split(',')[1]);
+            star.style.transform = `translate(${currentX + directionX}px, ${currentY + directionY}px)`;
+
+            // Меняем направление, если звезда выходит за границы
+            if (currentX > window.innerWidth || currentX < -5) directionX *= -1;
+            if (currentY > window.innerHeight || currentY < -5) directionY *= -1;
+        }, 50);
+    }
+
+    // Создаем звезды
+    for (let i = 0; i < 100; i++) {
+        createStar();
+    }
+</script>
+
+</body>
+</html>
