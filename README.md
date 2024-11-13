@@ -9,6 +9,9 @@ You can click the Preview link to take a look at your changes.
 --->
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=emelyagr&theme=tokyonight&show_icons=true)](https://github.com/anuraghazra/github-readme-stats)
 
+<!DOCTYPE html>
+<html lang="ru">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Космическое движение</title>
@@ -32,7 +35,10 @@ You can click the Preview link to take a look at your changes.
             100% { opacity: 0.5; }
         }
     </style>
+</head>
 <body>
+
+<div id="stars-container"></div>
 
 <script>
     function createStar() {
@@ -41,7 +47,7 @@ You can click the Preview link to take a look at your changes.
         const x = Math.random() * window.innerWidth;
         const y = Math.random() * window.innerHeight;
         star.style.transform = `translate(${x}px, ${y}px)`;
-        document.body.appendChild(star);
+        document.getElementById('stars-container').appendChild(star);
 
         // Анимация движения звезды
         let directionX = Math.random() < 0.5 ? 1 : -1;
@@ -65,3 +71,4 @@ You can click the Preview link to take a look at your changes.
 </script>
 
 </body>
+</html>
