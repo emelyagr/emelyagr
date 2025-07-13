@@ -11,4 +11,4 @@ You can click the Preview link to take a look at your changes.
 
 [![Star History Chart](https://api.star-history.com/svg?repos=emelyagr/emelyagr&type=Date)](https://www.star-history.com/#emelyagr/emelyagr&Date).
 
-[![emelyagr](https://github.com/emelyagr/emelyagr/blob/main/github-user-contribution.svg).
+![emelyagr](https://github.com/emelyagr/emelyagr/blob/main/github-user-contribution.svg).
