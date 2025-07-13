@@ -15,7 +15,7 @@ You can click the Preview link to take a look at your changes.
       - name: generate github-contribution-grid-snake.svg
         uses: Platane/snk/svg-only@v3
         with:
-          github_user_name: ${{ emelyagr }}
+          emelyagr: ${{ emelyagr }}
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
