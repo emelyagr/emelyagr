@@ -11,7 +11,7 @@ You can click the Preview link to take a look at your changes.
 
 [![Star History Chart](https://api.star-history.com/svg?repos=emelyagr/emelyagr&type=Date)](https://www.star-history.com/#emelyagr/emelyagr&Date).
 
-- uses: Platane/snk/svg-only@v3
+uses: Platane/snk/svg-only@v3
 
   with:
     # github user name to read the contribution graph from (**required**)
