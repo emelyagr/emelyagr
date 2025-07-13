@@ -10,3 +10,12 @@ You can click the Preview link to take a look at your changes.
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=emelyagr&theme=tokyonight&show_icons=true)](https://github.com/anuraghazra/github-readme-stats).
 
 [![Star History Chart](https://api.star-history.com/svg?repos=emelyagr/emelyagr&type=Date)](https://www.star-history.com/#emelyagr/emelyagr&Date).
+
+      # generates a snake game from a github user (<github_user_name>) contributions graph, output a svg animation at <svg_out_path>
+      - name: generate github-contribution-grid-snake.svg
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
