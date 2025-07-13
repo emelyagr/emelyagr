@@ -15,7 +15,7 @@ You can click the Preview link to take a look at your changes.
   with:
     # github user name to read the contribution graph from (**required**)
     # using action context var `github.repository_owner` or specified user
-    emelyagr: ${{ github.repository_owner }}
+    emelyagr: ${{ emelyagr }}
 
     # list of files to generate.
     # one file per line. Each output can be customized with options as query string.
